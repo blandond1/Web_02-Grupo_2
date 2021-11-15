@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Gestión Incidentes</title>        
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img { 
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    
+<div class="container">
+  <main>
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="../img/Incidentes.jpeg" alt="" >
+      <h2>Incidentes</h2>
+      <p class="lead">Abajo encontrará el formulario para la gestión de Incidentes.</p>
+    </div>
+    <a href="index.html" placeholder="Página principal">Inicio</a>
+
+    <div class="row g-5">
+      <div class="col-md-5 col-lg-4 order-md-last">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-primary">Orden de trabajo</span>
+        </h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Incidente 1</h6>
+              <input class="text-muted" type="text">Breve descripción</input>
+            </div>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Incidente 2</h6>
+              <input class="text-muted" type="text">Breve descripción</input>
+            </div>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Incidente 3</h6>
+              <input class="text-muted" type="text">Breve descripción</input>
+            </div>
+          </li>
+        </ul>
+
+        <form class="card p-2">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Numero OT">
+            <button type="submit" class="btn btn-secondary">OT</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">Información general</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="nombre" class="form-label">Nombre(s)</label>
+              <input type="text" class="form-control" id="nombre" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="apellidos" class="form-label">Apellido (s)</label>
+              <input type="text" class="form-control" id="apellidos" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Apellido (s) son requeridos.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="cargo" class="form-label">Cargo</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text">@</span>
+                <input type="text" class="form-control" id="cargo" placeholder="cargo" required>
+              <div class="invalid-feedback">
+                  Su cargo es requerido.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+              <input type="email" class="form-control" id="email" placeholder="usted@example.com">
+              <div class="invalid-feedback">
+                Ingres correo válido.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="direccion" class="form-label">Lugar ocurrencia incidente</label>
+              <input type="text" class="form-control" id="direccion" placeholder="Bodega, carera ...," required>
+              <div class="invalid-feedback">
+                Favor ingresar direccion o lugar del incidente.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address2" class="form-label">Lugar ocurrencia 2 <span class="text-muted">(Optional)</span></label>
+              <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+            </div>
+
+            <div class="col-md-5">
+              <label for="Seguridad" class="form-label">Medidas de seguridad</label>
+              <select class="form-select" id="country" required>
+                <option value="">Elija...</option>
+                <option>Piso mojado</option>
+                <option>Peligro eléctrico</option>
+                <option>Cerramiento zona de trabajo</option>
+                <option>Sin medidas de seguridad</option>
+              </select>
+              <div class="invalid-feedback">
+                Por favor elija una opción válida
+              </div>
+            </div>
+
+          <hr class="my-4">
+          <label for="Seguridad" class="form-label">Horario ocurrencia</label>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="diurno">
+            <label class="form-check-label" for="diurno">Diurno</label>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="nocturno">
+            <label class="form-check-label" for="nocturno">Nocturno</label>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="extra">
+            <label class="form-check-label" for="extra">Tiempo extra</label>
+          </div>
+
+          <hr class="my-4">
+
+          <h4 class="mb-3">Tipo personal afectado</h4>
+
+          <div class="my-3">
+            <div class="form-check">
+              <input id="credit" name="tipoPersonal" type="radio" class="form-check-input" checked required>
+              <label class="form-check-label" for="vinculado">Vinculado</label>
+            </div>
+            <div class="form-check">
+              <input id="debit" name="tipoPersonal" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="contratista">Contratista</label>
+            </div>
+            <div class="form-check">
+              <input id="paypal" name="tipoPersonal" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="visitante">Visitante</label>
+            </div>
+          </div>
+
+          <div class="row gy-3">
+            <div class="col-md-6">
+              <label for="cc-name" class="form-label">Tipo documento</label>
+              <input type="text" class="form-control" id="cc-name" placeholder="" required>
+              <small class="text-muted">Nombre presentado en la identificación</small>
+              <div class="invalid-feedback">
+                Tipo documento es requerido
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="cc-number" class="form-label">Número Id</label>
+              <input type="text" class="form-control" id="cc-number" placeholder="" required>
+              <div class="invalid-feedback">
+                Numero de identificación es requerido
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="idContrato" class="form-label">Id contrato</label>
+              <input type="text" class="form-control" id="idContrato" placeholder="">
+              <div class="invalid-feedback">
+                identificación contrato.
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <label for="idContrato" class="form-label">Responsable visita</label>
+            <input type="text" class="form-control" id="idContrato" placeholder="">
+            <div class="invalid-feedback">
+              Responsable del visitante (s)
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <label for="idContrato" class="form-label">Motivo visita</label>
+          <input type="text" class="form-control" id="idContrato" placeholder="">
+          <div class="invalid-feedback">
+            Motivo visita
+          </div>
+        </div>
+      </div>
+
+     
+        </form>
+      </div>
+    </div>
+    <hr class="my-4">
+
+    <button class="w-100 btn btn-primary btn-lg" type="submit">Acepte el registro</button>
+</main>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2017–2021 ACME</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>
+</div>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      <script src="form-validation.js"></script>
+  </body>
+</html>
