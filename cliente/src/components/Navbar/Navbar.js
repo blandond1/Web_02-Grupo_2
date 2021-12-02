@@ -4,18 +4,27 @@ import { Container, Nav, Navbar, DropdownButton, Dropdown, Row } from "react-boo
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.css";
-import IssieLogo from '../Img/issielogo.png';
+import IssieLogo from "../Img/issielogo.png";
+import Cookies from "universal-cookie/es6";
+
+const cookies = new Cookies();
 
 export default class NavBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
+
+  logout() {
+    cookies.remove("_s");
+    window.location.reload();
+  }
+
   render() {
     return (
-      <Navbar fixed="top" id="navbar" style={{backgroundColor: "#00FFFF"}}>
+      <Navbar fixed="top" id="navbar" style={{ backgroundColor: "#00FFFF" }}>
         <Container>
-        <img className="img-logo" src={ IssieLogo } alt="SISO"/>
+          <img className="img-logo" src={IssieLogo} alt="SISO" />
           <Navbar.Brand href="#home">
             ISSIEVOICE <span id="usuario-sub-branm"></span>
           </Navbar.Brand>
@@ -33,7 +42,7 @@ export default class NavBar extends React.Component {
                 <Row>USUARIO</Row>
               </Dropdown.Header>
               <Dropdown.Divider />
-              <Dropdown.Item href="#/action-1">Cerrar Sesion</Dropdown.Item>
+              <Dropdown.Item onClick={() => this.logout()}>Cerrar Sesion</Dropdown.Item>
               {/*<Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
               <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>*/}
             </DropdownButton>
@@ -43,4 +52,3 @@ export default class NavBar extends React.Component {
     );
   }
 }
-
