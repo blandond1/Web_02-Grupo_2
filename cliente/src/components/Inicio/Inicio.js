@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Body, Div, Main, Footer, H1, H2, H4, P, Form, Label, Path, Svg, Circle, Rect, Line, Legend, Input, Textarea } from "react-bootstrap";
+import { Container, Body, Div, Nav, A, Main, Footer, H1, H2, H4, P, Form, Label, Path, Svg, Circle, Rect, Line, Legend, Input, Textarea } from "react-bootstrap";
 
 export default class Inicio extends React.Component {
     constructor(props) {
@@ -11,19 +11,19 @@ export default class Inicio extends React.Component {
             <Container>
                 <Body>
                     <Div clas="nav-bg">
-                        <nav class="navegacion-principal">
-                            <a href="#">Compañia</a>
-                            <!-- esto quiere decir que aqui aparecerá el nombre del a compañía? o es algo relacionado a nuestra compañia-->
-                            <a href="#">Noticias</a>
-                            <a href="#">Politica SISO</a>
-                            <a href="#">Contacto</a>
-                            <a href="#">Contacto2</a>
-                        </nav>
+                        <Nav class="navegacion-principal">
+                            <A href="#">Compañia</A>
+                            
+                            <A href="#">Noticias</A>
+                            <A href="#">Politica SISO</A>
+                            <A href="#">Contacto</A>
+                            <A href="#">Contacto2</A>
+                        </Nav>
                     </Div>
 
                     <Div class="img1">
                         <Div class="contenido-img1">
-                            <H4>SIGISS</H4>
+                            <H4>SIGSO</H4>
                             <H2>
                                 Sistema de Gestión e Información en Seguridad y Salud Ocupacional
                             </H2>

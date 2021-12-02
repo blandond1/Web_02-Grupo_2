@@ -11,7 +11,7 @@
   --mouseencima: #95d0f5;
 }
 
-html {
+.html {
   box-sizing: border-box;
   min-height: 100%;
   scroll-snap-type: mandatory;
@@ -25,8 +25,9 @@ html {
 p {
   line-height: 2;
 }
-body {
-  font-family: 'krub', sans-serif;
+
+.body {
+  font-family: "krub", sans-serif;
   background-image: linear-gradient(to top, #dfe9f3 0% white 100%);
   min-height: 100%;
 }
@@ -270,9 +271,9 @@ h4 {
   }
 }
 
-.campo input[type='text'],
-.campo input[type='tel'],
-.campo input[type='email'],
+.campo input[type="text"],
+.campo input[type="tel"],
+.campo input[type="email"],
 .campo textarea {
   width: 100%;
   padding: 0.5rem;
@@ -282,7 +283,7 @@ h4 {
 
 @media (min-width: 768px) {
   :is(.campo)
-    :is(input[type='text'], input[type='text'], input[type='tel'], input[type='email'], textarea) {
+    :is(input[type="text"], input[type="text"], input[type="tel"], input[type="email"], textarea) {
     flex: 1;
   }
 }

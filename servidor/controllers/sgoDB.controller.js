@@ -23,7 +23,7 @@ exports.create = function (req, res) {
         validacionInvestigacion: req.body.validacionInvestigacion,
         diasPerdidos: req.body.diasPerdidos,
         date: req.body.date,
-        activo: req.body.activo
+        activo: req.body.activo,
 
     })
     sgoDB.save(function (err) {
@@ -92,12 +92,12 @@ exports.remove = function (req, res) {
         if (err) {
             console.error(err),
             response.exito = false,
-            response.msg = 'Error al eliminar la incapacidad',
+            response.msg = 'Error al eliminar el Incidente',
             res.json(response)
             return;
         }
         response.exito = true
-        response.msg = 'La incapacidad se eliminó correctamente'
+        response.msg = 'El Incidente se eliminó correctamente'
         res.json(response)
     })
 }

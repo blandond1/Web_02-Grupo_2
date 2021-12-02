@@ -1,17 +1,10 @@
 import React from "react";
-import {
-  Container,
-  Nav,
-  Navbar,
-  DropdownButton,
-  Dropdown,
-  Row,
-  Col,
-} from "react-bootstrap";
+import { Container, Nav, Navbar, DropdownButton, Dropdown, Row } from "react-bootstrap";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.css";
-import Logo from '../Img/Logo.png';
+import IssieLogo from '../Img/issielogo.png';
 
 export default class NavBar extends React.Component {
   constructor(props) {
@@ -20,11 +13,11 @@ export default class NavBar extends React.Component {
   }
   render() {
     return (
-      <Navbar fixed="top" id="navbar" bg="primary" variant="dark">
+      <Navbar fixed="top" id="navbar" style={{backgroundColor: "#00FFFF"}}>
         <Container>
-        <img className="img-logo" src={ Logo } alt="Logo"/>
+        <img className="img-logo" src={ IssieLogo } alt="SISO"/>
           <Navbar.Brand href="#home">
-            Grupo 2 Mision Tic <span id="usuario-sub-branm"></span>
+            ISSIEVOICE <span id="usuario-sub-branm"></span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

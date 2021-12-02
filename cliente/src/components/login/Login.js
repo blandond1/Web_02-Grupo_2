@@ -1,12 +1,13 @@
 import React from "react";
 import axios from "axios";
-import { Container, Form, Button, Row, Col, Image } from "react-bootstrap";
+import { Container, Form, Button, Row, Col } from "react-bootstrap";
 import { APIHOST as host } from '../../app.json';
 import './Login.css'
 import { isNull } from 'util';
 import Cookies from 'universal-cookie';
 import { calculaExtraccionSesion } from "../helper/helpers";
 import Loading from "../Loading/Loading";
+import NavBar from "../Navbar/Navbar";
 
 const cookies = new Cookies();
 
@@ -38,6 +39,7 @@ export default class login extends React.Component {
                         path: '/',
                         expires: calculaExtraccionSesion(),
                     })
+                    this.props.history.push("/Inicio")
                 }
                 this.setState({
                     loading: false
@@ -53,8 +55,9 @@ export default class login extends React.Component {
     }
     render() {
         return(
-
+            
             <Container id = "login-container" >
+                <NavBar />
                 <Loading show={this.state.loading} />
                 <Row>
                     <Col>

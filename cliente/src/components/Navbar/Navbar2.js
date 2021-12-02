@@ -9,15 +9,15 @@ export default class NavBar2 extends React.Component {
     render() {
         return (
 
-            <Navbar bg="primary" variant="dark">
+            <Navbar style={{backgroundColor: "#00FFFF", marginTop: 70  }}>
                 <Container>
-                    <Navbar.Brand href="#home">SIGSO</Navbar.Brand>
+                    <Navbar.Brand href="#home">SIGSO - Pagina Principal</Navbar.Brand>
                     <Nav className="me-auto">
-                        <Nav.Link href="#home">Compañía</Nav.Link>
-                        <Nav.Link href="#link">Noticias</Nav.Link>
-                        <Nav.Link href="#link">Politica SISO</Nav.Link>
-                        <Nav.Link href="#link">Contacto</Nav.Link>                        
-                        <Nav.Link href="../../components/login/Login.js">Iniciar Sesión</Nav.Link>
+                        <Nav.Link href="/compania">Compañía</Nav.Link>
+                        <Nav.Link href="/noticias">Noticias</Nav.Link>
+                        <Nav.Link href="/politicaSISO">Politica SISO</Nav.Link>
+                        <Nav.Link href="/contacto">Contacto</Nav.Link>                        
+                        <Nav.Link href="/login">Iniciar Sesión</Nav.Link>
                         
                     </Nav>
                 </Container>

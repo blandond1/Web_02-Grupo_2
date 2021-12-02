@@ -7,9 +7,9 @@ const CiSchema = new Schema({
     sede: String, 
     tipo_riesgo: String,
     nivel_riesgo: String,
-    fecha:{type: Date, default: Date.now},
+    fecha:{type: Date, min: '1987-09-28'},
     responsable: String, 
-    descrpcion: String,
+    descripcion: String,
     anexos: String,
 })
 

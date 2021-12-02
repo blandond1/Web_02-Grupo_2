@@ -14,7 +14,7 @@ exports.create = function (req, res) {
         nivel_riesgo: req.body.nivel_riesgo,
         fecha: req.body.fecha,
         responsable: req.body.responsable,
-        descrpcion: req.body.descrpcion,
+        descripcion: req.body.descripcion,
         anexos: req.body.anexos,
 
     })
@@ -22,12 +22,12 @@ exports.create = function (req, res) {
         if (err) {
             console.log = false;
             response.exito = false,
-                response.msg = "Error al guardar la incapacidad"
+                response.msg = "Error al guardar la condicion"
             res.json(response)
             return;
         }
         response.exito = true,
-            response.msg = "La incapacidad se guardó correctamente"
+            response.msg = "La condicion se guardó correctamente"
         res.json(response)
     })
 }
@@ -52,7 +52,7 @@ exports.update = function(req, res) {
         nivel_riesgo: req.body.nivel_riesgo,
         fecha: req.body.fecha,
         responsable: req.body.responsable,
-        descrpcion: req.body.descrpcion,
+        descripcion: req.body.descripcion,
         anexos: req.body.anexos,
 
     }

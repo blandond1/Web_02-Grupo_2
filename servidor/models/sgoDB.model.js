@@ -4,22 +4,22 @@ const Schema = mongoose.Schema;
 
 const SgoDBSchema = new Schema({
 
-    nombre: {type: String, required: [true, 'Nombre obligatorio']}, 
-    apellido: {type: String, required: [true, 'Apellido obligatorio']},
+    nombre: String, 
+    apellido: String, 
     fecha: {type: Date, min: '1987-09-28'},
-    sede: {type: String, required: [true, 'Sede obligatoria']}, 
-    creador: {type: String, required: [true, 'Relator Obligatorio']}, 
-    proceso: {type: String, required: [true, 'Proceso obligatorio']}, 
+    sede: String, 
+    creador: String, 
+    proceso: String, 
     validacion: String,
-    descripcionIncidente: {type: String, required: [true, 'Proceso obligatorio']},
-    investigadorLider: {type: String, required: [true, 'Investigador Obligatorio']}, 
+    descripcionIncidente: String, 
+    investigadorLider: String, 
     severidad: String,
     tipoIncidente: String,
     tipoTrabajador: String, 
     validacionInvestigacion: String,
     diasPerdidos:{type:Number,default:0},
     date:{type: Date, default: Date.now},
-    activo:{ type:Boolean,default:true }
+    activo: String,
 
 })
 

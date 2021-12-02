@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Navbar } from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 
 export default class NavBar3 extends React.Component {
     constructor(props) {
@@ -9,48 +9,20 @@ export default class NavBar3 extends React.Component {
     render() {
         return (
 
-            <>
-                <Navbar bg="light">
-                    <Container>
-                        <Navbar.Brand href="#home">Brand link</Navbar.Brand>
-                    </Container>
-                </Navbar>
-                <br />
-                <Navbar bg="light">
-                    <Container>
-                        <Navbar.Brand>Brand text</Navbar.Brand>
-                    </Container>
-                </Navbar>
-                <br />
-                <Navbar bg="dark">
-                    <Container>
-                        <Navbar.Brand href="#home">
-                            <img
-                                src="/logo.svg"
-                                width="30"
-                                height="30"
-                                className="d-inline-block align-top"
-                                alt="React Bootstrap logo"
-                            />
-                        </Navbar.Brand>
-                    </Container>
-                </Navbar>
-                <br />
-                <Navbar bg="dark" variant="dark">
-                    <Container>
-                        <Navbar.Brand href="#home">
-                            <img
-                                alt=""
-                                src="/logo.svg"
-                                width="30"
-                                height="30"
-                                className="d-inline-block align-top"
-                            />{' '}
-                            React Bootstrap
-                        </Navbar.Brand>
-                    </Container>
-                </Navbar>
-            </>
+            <Navbar bg="primary" variant="dark">
+                <Container>
+                    <Navbar.Brand href="#home">SIGSO - Ausentismo</Navbar.Brand>
+                    <Nav className="me-auto">
+                        <Nav.Link href="/Inicio">Inicio</Nav.Link>
+                        <Nav.Link href="/DesempenoGeneral">Desempeño General</Nav.Link>
+                        <Nav.Link href="/Incidentes">Incidentes</Nav.Link>
+                        <Nav.Link href="/CondicionesInseguras">Condiciones Inseguras</Nav.Link>                        
+                        <Nav.Link href="/SaludOcupacional">Salud Ocupacional</Nav.Link>
+                        <Nav.Link href="/Ausentismo">Ausentismo</Nav.Link>
+                        
+                    </Nav>
+                </Container>
+        </Navbar>
 
         );
     }
