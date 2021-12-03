@@ -9,7 +9,7 @@ export default class NavBar2 extends React.Component {
     render() {
         return (
 
-            <Navbar style={{backgroundColor: "#00FFFF", marginTop: 70  }}>
+            <Navbar style={{backgroundColor: "#8ec5e8", marginTop: 70}}>
                 <Container>
                     <Navbar.Brand href="#home">SIGSO - Pagina Principal</Navbar.Brand>
                     <Nav className="me-auto">

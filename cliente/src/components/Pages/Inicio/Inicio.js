@@ -1,6 +1,7 @@
 import React from "react";
 //import { Container, Body, Row } from "react-bootstrap";
 import NavBar1 from "../../Navbar/Navbar1";
+import NavBar from "../../Navbar/Navbar"
 import styles from "../Inicio/Inicio.module.css"
 
 
@@ -8,7 +9,8 @@ import styles from "../Inicio/Inicio.module.css"
 export default function Inicio() {
   return (
     <div>
-        <NavBar1 />
+        <NavBar/>
+        <NavBar1/>
         <div>
             <div className={styles.img1}>
                      <div className={styles.contenidoImg1}>

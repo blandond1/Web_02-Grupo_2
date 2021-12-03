@@ -22,9 +22,9 @@ export default class NavBar extends React.Component {
 
   render() {
     return (
-      <Navbar fixed="top" id="navbar" style={{ backgroundColor: "#00FFFF" }}>
+      <Navbar fixed="top" id="navbar" style={{backgroundColor: "#8ec5e8"}}>
         <Container>
-          <img className="img-logo" src={IssieLogo} alt="SISO" />
+          <img className="img-logo" src={IssieLogo} alt="SISO"/>
           <Navbar.Brand href="#home">
             ISSIEVOICE <span id="usuario-sub-branm"></span>
           </Navbar.Brand>

@@ -9,16 +9,16 @@ export default class NavBar3 extends React.Component {
     render() {
         return (
 
-            <Navbar  style={{backgroundColor: "#76BF74"}}>
+            <Navbar  style={{backgroundColor: "#3B3B45", color: "#FFBF00", marginTop: 90}}>
                 <Container>
-                    <Navbar.Brand href="#home">SIGSO</Navbar.Brand>
+                    <Navbar.Brand href="#home" style={{color:"#ffbf00"}}>SIGSO</Navbar.Brand>
                     <Nav className="me-auto">
-                        <Nav.Link href="/Inicio">Inicio</Nav.Link>
-                        <Nav.Link href="/DesempenoGeneral">Desempeño General</Nav.Link>
-                        <Nav.Link href="/Incidentes">Incidentes</Nav.Link>
-                        <Nav.Link href="/CondicionesInseguras">Condiciones Inseguras</Nav.Link>                        
-                        <Nav.Link href="/SaludOcupacional">Salud Ocupacional</Nav.Link>
-                        <Nav.Link href="/Ausentismo">Ausentismo</Nav.Link>
+                        <Nav.Link href="/Inicio" style={{color:"#ffbf00"}}>Inicio</Nav.Link>
+                        <Nav.Link href="/DesempenoGeneral" style={{color:"#ffbf00"}}>Desempeño General</Nav.Link>
+                        <Nav.Link href="/Incidentes" style={{color:"#ffbf00"}}>Incidentes</Nav.Link>
+                        <Nav.Link href="/CondicionesInseguras" style={{color:"#ffbf00"}}>Condiciones Inseguras</Nav.Link>                        
+                        <Nav.Link href="/SaludOcupacional" style={{color:"#ffbf00"}}>Salud Ocupacional</Nav.Link>
+                        <Nav.Link href="/Ausentismo" style={{color:"#ffbf00"}}>Ausentismo</Nav.Link>
                         
                     </Nav>
                 </Container>

@@ -13,6 +13,7 @@ const columns = [
   {
     dataField: '_id',
     text: 'Id',
+    hidden: 'Id',
   },
   {
     dataField: 'nombre',
@@ -25,6 +26,7 @@ const columns = [
   {
     dataField: 'fecha',
     text: 'Fecha',
+    hidden: 'fecha',
   },
   {
     dataField: 'sede',
@@ -41,14 +43,17 @@ const columns = [
   {
     dataField: 'validacion',
     text: 'Validación',
+    hidden: 'Validacion',
   },
   {
     dataField: 'descripcionIncidente',
     text: 'descripcionIncidente',
+    hidden: 'descripcionIncidente',
   },
   {
     dataField: 'investigadorLider',
     text: 'investigadorLidere',
+    hidden: 'investigadorLidere',
   },
   {
     dataField: 'severidad',
@@ -65,6 +70,7 @@ const columns = [
   {
     dataField: 'validacionInvestigacion',
     text: 'validacionInvestigacion',
+    hidden: 'validacionInvestigacion',
   },
   {
     dataField: 'diasPerdidos',

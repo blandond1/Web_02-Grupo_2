@@ -18,8 +18,8 @@ export default class home extends React.Component {
                     <Carousel.Item>
                         <img className="d-block w-100" src={Ausentismo} alt="Ausencias" />
                         <Carousel.Caption>
-                            <h3>Ausentismo</h3>
-                            <p>
+                            <h3 style={{ color: "#7eb0cf" }}>Ausentismo</h3>
+                            <p style={{ color: "#7eb0cf" }}>
                                 Dias perdidos por incapacidad debido a incidentes o enfermedades
                                 profesionales
                             </p>
@@ -29,8 +29,8 @@ export default class home extends React.Component {
                         <img className="d-block w-100" src={Incidentes} alt="Incidentes" />
 
                         <Carousel.Caption>
-                            <h3>Incidentes y Accidentes</h3>
-                            <p>
+                            <h3 style={{ color: "black" }} >Incidentes y Accidentes</h3>
+                            <p style={{ color: "black" }} >
                                 Son los eventos que ocurren debido a las actividades laborales
                                 directas e indirectas. Algunos son incapacitantes o solo
                                 requieren atención medica.
@@ -44,8 +44,8 @@ export default class home extends React.Component {
                             alt="Enfermedades Profesionales" />
 
                         <Carousel.Caption>
-                            <h3 style={{ color: "black" }}>Enfermedades Profesionales</h3>
-                            <p style={{ color: "black" }}>
+                            <h3 style={{ color: "#8ec5e8" }}>Enfermedades Profesionales</h3>
+                            <p style={{ color: "#8ec5e8" }}>
                                 Son enfermedades causadas por el ejercicio de la profesión o
                                 actividad laboral debido a una condición de riesgo{" "}
                             </p>

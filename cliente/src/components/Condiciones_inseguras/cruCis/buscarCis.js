@@ -13,6 +13,7 @@ const columns = [
   {
     dataField: '_id',
     text: 'Id',
+    hidden: 'Id',
   },
   {
     dataField: 'observador',
